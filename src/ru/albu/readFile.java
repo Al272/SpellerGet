@@ -12,7 +12,7 @@ public class readFile {
         List<String> list = new ArrayList<String>() {};
         Map<String , Integer> map = new TreeMap<>();
         try {
-            File file = new File(path);//C:/Users/Алексей Б/Desktop/ || "C:/Users/Алексей Б/Desktop/example.txt"
+            File file = new File(path);
             FileReader fr = new FileReader(file);
             BufferedReader reader = new BufferedReader(fr);
 
@@ -56,7 +56,7 @@ public class readFile {
                    if (max<counter)
                        max=counter;
                     System.out.println("слово - "+list.get(i)+" встречается "+counter+" раз");
-                    i = j--;
+                    i = --j;
                     break;
                 }
             }
